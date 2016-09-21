@@ -1,0 +1,63 @@
+body{
+padding-top: 70px;
+}
+.day1{
+    background: url("blueSky.jpeg");
+    background-repeat: no-repeat;
+
+    }
+.day2{
+    background-image: url("sunny.jpg");
+    background-repeat: no-repeat;
+    
+}
+.day3{
+    background-image: url("partSunny.jpg");
+    background-repeat: no-repeat;
+    
+}
+.day4{
+    background-image: url("sunny.jpg");
+    background-repeat: no-repeat;
+
+}
+.day5{
+    background-image: url("cloudy.jpeg");
+    background-repeat: no-repeat;
+}
+   
+.day6{
+    background-image: url("blueSky.jpeg");
+    background-repeat: no-repeat;
+    
+}
+.card{
+   border-radius: 15%;
+   background-size: 100% 100%;
+
+
+}
+.tempOutside{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+h5{
+    text-align: center;
+    font-weight: bold;
+}
+.left{
+    text-align: left;
+    font-weight: bold;
+
+}
+.right{
+    text-align: right;
+    font-weight: bold;
+}
