@@ -13,97 +13,138 @@
     <link rel="stylesheet" href="yeti.css">
     <!-- Our project CSS -->
     <link rel="stylesheet" href="weatherHw.css">
+    <link rel="stylesheet" href="weatherHw.js">
+
 </head>
 <div class="container">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <button type="submit"><a href="https://weather.com/?cm_ven=PS_GGL_Channel_9102015_1&gclid=CLDa8M2_n88CFY48gQodbcMM7w" target="_blank">LOGIN</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <button type="submit"><a href="https://weather.com/?cm_ven=PS_GGL_Channel_9102015_1&gclid=CLDa8M2_n88CFY48gQodbcMM7w" target="_blank">Weather Channel</a>
   
-  </div>
-</nav>
+  
+</nav></div>
 <body>
     <h1>Deb's Weather App</h1>
-    
-    <h5>Add Location<input id="weather" type="text" placeholder="Zip Code"><button id="add"><span class="glyphicon glyphicon-plus"></span></button>
-    <hr />
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 day1 card"> 
-                <h5> Paintsville, Kentucky </h5>
-                <br />
-                <h1> 70 F </h1>
-                <br />
-                <h5>Clear</h5>
-                <hr />
-                <h5 class="left">min: 63</h5>
-                <h5>Rain:10% </h5>
-                <h5 class="right"> max:90</h5>
-                
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 city1 card">
+                    <h4> Paintsville, Kentucky </h4>
+                    <br />
+                    <h1 id="tempPaintsville"></h1>
+                    <br />
+                    <h5 id=tempPvilleSum></h5>
+                    <hr />
+                    <h5 class="left">Min</h5>
+                    <h5 id="minTempPville" class="left"></h5>
+                    <h5>Possibility of Rain</h5>
+                    <h5 id="rainPvillePoss"></h5>
+                    <h5 class="right">Max</h5>
+                    <h5 id="maxTempPville" class="right"></h5>
+                </div>
 
-        
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-3 city2 card">
+                    <h4>Huntington, West Virginia </h4>
+                    <br />
+                    <h1 id="tempHunt"></h1>
+                    <br />
+                    <h5 id=tempHuntSum></h5>
+                    <hr />
+                    <h5 class="left">Min</h5>
+                    <h5 id="minTempHunt" class="left"></h5>
+                    <h5>Possibility of Rain</h5>
+                    <h5 id="rainHuntPoss"></h5>
+                    <h5 class="right">Max</h5>
+                    <h5 id="maxTempHunt" class="right"></h5>
                 </div>
-            <div class="col-sm-4 day2 card">
-                <h5>Huntington, West Virginia </h5>
-                <br />
-                <h1> 80 F </h1>
-                <br />
-                <h5>Sunny</h5>
-                <hr />
-                <h5 class="left">min: 64</h5>
-                <h5>Rain: 0% </h5>
-                <h5 class="right"> max:87</h5>
+
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-3 city3 card">
+                    <h4>Gatlinburg, Tennessee </h4>
+                    <br />
+                    <h1 id="tempGat"></h1>
+                    <br />
+                    <h5 id=tempGatSum></h5>
+                    <hr />
+                    <h5 class="left">Min</h5>
+                    <h5 id="minTempGat" class="left"></h5>
+                    <h5>Possibility of Rain</h5>
+                    <h5 id="rainGatPoss"></h5>
+                    <h5 class="right">Max</h5>
+                    <h5 id="maxTempGat" class="right"></h5>
+
                 </div>
-                
-            <div class="col-sm-4 day3 card">
-                <h5>Gatlinburg, Tennessee </h5>
-                <br />
-                <h1> 70 F </h1>
-                <br />
-                <h5>Partly Sunny</h5>
-                <hr />
-                <h5 class="left">min: 64</h5>
-                <h5>Rain: 0% </h5>
-                <h5 class="right"> max:87</h5>
+
+                <div class="col-sm-1"></div>
 
             </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-4 day4 card">
-                <h5>Pigeon Forge, Tennessee</h5>
-                <br />
-                <h1> 80 F </h1>
-                <br />
-                <h5>Sunny</h5>
-                <hr />
-                <h5 class="left">min: 65</h5>
-                <h5>Rain: 0% </h5>
-                <h5 class="right"> max:89</h5>
+            <br />
+            <div class="row">
+                <div class="col-sm-3 city4 card">
+                    <h4>Pigeon Forge, Tennessee</h4>
+                    <br />
+                    <h1 id="tempPig"></h1>
+                    <br />
+                    <h5 id=tempPigSum></h5>
+                    <hr />
+                    <h5 class="left">Min</h5>
+                    <h5 id="minTempPig" class="left"></h5>
+                    <h5>Possibility of Rain</h5>
+                    <h5 id="rainPigPoss"></h5>
+                    <h5 class="right">Max</h5>
+                    <h5 id="maxTempPig" class="right"></h5>
 
-            </div>
-            <div class="col-sm-4 day5 card">
-                <h5>Charlevoix, Michigan</h5>
-                <br />
-                <h1> 88 F </h1>
-                <br />
-                <h5>Cloudy</h5>
-                <hr />
-                <h5 class="left">min: 63</h5>
-                <h5>Rain: 30% </h5>
-                <h5 class="right"> max:89</h5>
-</div>
-            <div class="col-sm-4 day6 card">
-                <h5>Las Vegas, Nevada</h5>
-                <br />
-                <h1> 72 F </h1>
-                <br />
-                <h5>Clear</h5>
-                <hr />
-                <h5 class="left">min: 59</h5>
-                <h5>Rain: 40% </h5>
-                <h5 class="right"> max:84</h5>
-        </div>
+                </div>
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-3 city5 card">
+                    <h4>Charlevoix, Michigan</h4>
+                    <br />
+                    <h1 id="tempChar"></h1>
+                    <br />
+                    <h5 id=tempCharSum></h5>
+                    <hr />
+                    <h5 class="left">Min</h5>
+                    <h5 id="minTempChar" class="left"></h5>
+                    <h5>Possibility of Rain</h5>
+                    <h5 id="rainCharPoss"></h5>
+                    <h5 class="right">Max</h5>
+                    <h5 id="maxTempChar" class="right"></h5>
+                </div>
+
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-3 city6 card">
+                    <h4>Find Weather for your City</h4>
+                <form>
+                        <h5><input type="text" placeholder="Address"><button id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <h5><input type="text" placeholder="City"><button id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <h5><input type="text" placeholder="Zip Code"><button id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                    
+
+                    
+                </form>
+
+
+                <div class="col-sm-1"></div>
 </div>
 
+
+<!-- Official JQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!-- Official Bootstrap -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<!-- Our project JS -->
+<script src="weatherHw.js"></script>
+
+</body>
+
+</html>
 
 
 </body>

@@ -1,39 +1,55 @@
 body{
 padding-top: 70px;
 }
-.day1{
-    background: url("blueSky.jpeg");
+.city1{
+    background: url("pville.jpeg");
     background-repeat: no-repeat;
+   
 
     }
-.day2{
-    background-image: url("sunny.jpg");
+.city2{
+    background-image: url("hunt.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+   
     
 }
-.day3{
-    background-image: url("partSunny.jpg");
+.city3{
+    background-image: url("gat.jpg");
+    background-position: right;
     background-repeat: no-repeat;
     
+    
 }
-.day4{
-    background-image: url("sunny.jpg");
+.city4{
+    background-image: url("pig.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+   
+    
+    
 
 }
-.day5{
-    background-image: url("cloudy.jpeg");
+.city5{
+    background-image: url("char.jpg");
     background-repeat: no-repeat;
+   
+
 }
    
-.day6{
-    background-image: url("blueSky.jpeg");
+.city6{
+    background-image: url("vegas.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+    height: 380px;
+    
+    
     
 }
 .card{
-   border-radius: 15%;
-   background-size: 100% 100%;
+   border-radius: 10%;
+   background-size: cover;
+ 
 
 
 }
@@ -48,9 +64,13 @@ h1{
     color: green;
     font-weight: bold;
 }
+h4{
+    color:black;
+}
 h5{
     text-align: center;
     font-weight: bold;
+    color:white;
 }
 .left{
     text-align: left;
@@ -61,3 +81,6 @@ h5{
     text-align: right;
     font-weight: bold;
 }
+
+
+
